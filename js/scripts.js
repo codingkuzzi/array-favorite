@@ -17,17 +17,21 @@ $(document).ready(function() {
 favoriteThings.push(favorite1Input);
 favoriteThings.push(favorite2Input);
 favoriteThings.push(favorite3Input);
-favoriteThings[2];
-var favoriteThings2 = [];
-favoriteThings2.push(favoriteThings);
-favoriteThings2.push(favoriteThings[0,1,2])
-alert (favoriteThings2);
 
+var favoriteThings2 = [];
+// favoriteThings2.push(favoriteThings);
+// favoriteThings2.push(favoriteThings[0,1,2])
+// alert (favoriteThings2);
+
+favoriteThings2.push(favoriteThings[1]);
+favoriteThings2.push(favoriteThings[0]);
+favoriteThings2.push(favoriteThings[2]);
 
 //alert(favoriteThings)
 
 //var result =
-    $("#output").text(favoriteThings);
-    $("#output2").text(favoriteThings2);
+    $("ul").append($("<li>" + favoriteThings2[0] + "</li>"));
+    $("ul").append($("<li>" + favoriteThings2[1] + "</li>"));
+    $("ul").append($("<li>" + favoriteThings2[2] + "</li>"));
   });
 });
